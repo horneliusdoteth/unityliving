@@ -5,7 +5,7 @@ import { MapPinIcon } from '@heroicons/react/24/outline';
 
 const Locations = () => {
   return (
-    <section id="locations" className="py-12 bg-gray-100">
+    <section id="locations" className="py-12 bg-transparent">
       <div className="container mx-auto text-center">
         <h2
           className="text-4xl font-heading font-bold text-primary mb-6"
@@ -18,7 +18,7 @@ const Locations = () => {
           {/* Location Card */}
           <Link
             to="/locations/scottsdale" // Link to the details page
-            className="block bg-white p-6 rounded-lg shadow-custom-light hover:shadow-custom-heavy transition duration-300 max-w-lg"
+            className="block bg-orange-50 p-6 rounded-3xl shadow-2xl hover:shadow-custom-heavy transition duration-300 max-w-lg"
             data-aos="fade-up"
             data-aos-delay="200"
           >

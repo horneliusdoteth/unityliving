@@ -79,7 +79,7 @@ const LocationDetails = () => {
   ];
 
   return (
-    <section className="py-12 bg-gray-100">
+    <section className="py-12 background">
       <div className="container mx-auto px-4">
         <h2
           className="text-4xl font-heading font-bold text-primary mb-6"
@@ -101,7 +101,7 @@ const LocationDetails = () => {
               <img
                 src={image}
                 alt={`View ${index + 1}`}
-                className="w-full h-64 object-cover rounded-lg shadow-md"
+                className="w-full h-64 object-cover rounded-lg shadow-xl"
               />
               <div className="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition duration-300 rounded-lg flex items-center justify-center">
                 <span className="text-white text-xl font-semibold">View Photo</span>
@@ -145,7 +145,7 @@ const LocationDetails = () => {
         )}
 
         {/* Location Description */}
-        <div className="mt-12" data-aos="fade-up">
+        <div className="mt-12 font-semibold" data-aos="fade-up">
           <p className="text-lg text-text leading-relaxed mb-8">
             Our Scottsdale location offers a serene environment for recovery.
             Nestled in the heart of Scottsdale, it provides easy access to local

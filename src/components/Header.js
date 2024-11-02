@@ -44,7 +44,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed w-full z-20 bg-white shadow-lg transition-transform duration-700 ease-in-out transform-gpu ${
+      className={`fixed w-full z-20 bg-gray-50 shadow-2xl transition-transform duration-700 ease-in-out transform-gpu ${
         showHeader ? 'translate-y-0' : '-translate-y-[100%]'
       }`}
     >

@@ -14,7 +14,7 @@ const AboutUs = () => {
           />
         </div>
         {/* Text Content */}
-        <div className="md:w-1/2 md:pl-12 mt-8 md:mt-0" data-aos="fade-left">
+        <div className="md:w-1/2 md:pl-12 mt-8 md:mt-0 bg-orange-50 shadow-2xl ml-4 pt-4 pb-4 rounded-3xl" data-aos="fade-left">
           <h2 className="text-4xl font-heading font-bold text-primary mb-6">About Us</h2>
           <p className="text-lg leading-relaxed text-text">
             We provide a <span className="text-secondary font-semibold">safe</span> and <span className="text-secondary font-semibold">supportive</span> environment for individuals in recovery, aiming to help them reintegrate into society.
