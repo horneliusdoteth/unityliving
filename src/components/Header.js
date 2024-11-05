@@ -44,7 +44,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed w-full z-20 bg-gray-50 shadow-2xl transition-transform duration-700 ease-in-out transform-gpu ${
+      className={`fixed w-full z-20 bg-background drop-shadow-2xl transition-transform duration-700 ease-in-out transform-gpu ${
         showHeader ? 'translate-y-0' : '-translate-y-[100%]'
       }`}
     >
@@ -54,22 +54,22 @@ const Header = () => {
           <img
             src="/assets/unity_living_logo.webp"
             alt="Unity Living Logo"
-            className="w-12 h-12 mr-3"
+            className="w-10 h-10 mr-2"
           />
           <HashLink
             to="/#top"
-            className={`font-heading text-2xl font-bold ${navLinkColor}`}
+            className={`font-heading text-xl font-bold text-primary${navLinkColor}`}
           >
             Unity Living
           </HashLink>
         </div>
 
         {/* Center Section: Navigation Links */}
-        <nav className="hidden md:flex items-center space-x-6">
+        <nav className="hidden md:flex items-center space-x-8">
           <HashLink
             smooth
             to="/#about-us"
-            className={`text-lg font-bold hover:text-secondary transition duration-300 ${navLinkColor}`}
+            className={`text-lg hover:text-secondary transition duration-300 ${navLinkColor}`}
           >
             About Us
           </HashLink>
@@ -78,7 +78,7 @@ const Header = () => {
           <div className="relative">
             <button
               onClick={() => setLocationsOpen(!locationsOpen)}
-              className={`text-lg font-bold hover:text-secondary transition duration-300 flex items-center ${navLinkColor}`}
+              className={`text-lg hover:text-secondary transition duration-300 flex items-center ${navLinkColor}`}
             >
               Locations
               <ChevronDownIcon className="h-5 w-5 ml-1" />
@@ -100,7 +100,7 @@ const Header = () => {
           <HashLink
             smooth
             to="/#contact-us"
-            className={`text-lg font-bold hover:text-secondary transition duration-300 ${navLinkColor}`}
+            className={`text-lg hover:text-secondary transition duration-300 ${navLinkColor}`}
           >
             Contact Us
           </HashLink>
@@ -111,7 +111,7 @@ const Header = () => {
           {/* Phone Number (Desktop) */}
           <a
             href="tel:6028101856"
-            className={`hidden md:block ml-6 text-lg font-bold hover:text-secondary transition duration-300 ${navLinkColor}`}
+            className={`hidden md:block ml-6 text-lg font-medium hover:text-secondary transition duration-300 ${navLinkColor}`}
           >
             (602) 810-1856
           </a>
@@ -123,9 +123,9 @@ const Header = () => {
               aria-label="Toggle Menu"
             >
               {navOpen ? (
-                <XMarkIcon className={`h-6 w-6 ${navLinkColor}`} />
+                <XMarkIcon className={`h-6 w-6 text-primary ${navLinkColor}`} />
               ) : (
-                <Bars3Icon className={`h-6 w-6 ${navLinkColor}`} />
+                <Bars3Icon className={`h-6 w-6 text-primary ${navLinkColor}`} />
               )}
             </button>
           </div>
@@ -134,11 +134,11 @@ const Header = () => {
 
       {/* Mobile Navigation Menu */}
       {navOpen && (
-        <nav className="md:hidden bg-white shadow-lg">
+        <nav className="md:hidden bg-background shadow-lg">
           <HashLink
             smooth
             to="/#about-us"
-            className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+            className="block px-4 py-2 hover:bg-gray-100"
             onClick={() => setNavOpen(false)}
           >
             About Us
@@ -148,7 +148,7 @@ const Header = () => {
           <div className="border-t border-b border-gray-200">
             <button
               onClick={() => setLocationsOpen(!locationsOpen)}
-              className="w-full flex items-center justify-between px-4 py-2 text-gray-700 hover:bg-gray-100"
+              className="w-full flex items-center justify-between px-4 py-2 hover:bg-gray-100"
             >
               Locations
               <ChevronDownIcon className="h-5 w-5" />
@@ -157,7 +157,7 @@ const Header = () => {
               <div className="bg-white">
                 <Link
                   to="/locations/scottsdale"
-                  className="block px-6 py-2 text-gray-700 hover:bg-gray-100"
+                  className="block px-6 py-2 hover:bg-gray-100"
                   onClick={() => {
                     setNavOpen(false);
                     setLocationsOpen(false);
@@ -173,7 +173,7 @@ const Header = () => {
           <HashLink
             smooth
             to="/#contact-us"
-            className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+            className="block px-4 py-2 hover:bg-gray-100"
             onClick={() => setNavOpen(false)}
           >
             Contact Us
@@ -181,7 +181,7 @@ const Header = () => {
 
           <a
             href="tel:6028101856"
-            className="block px-4 py-2 text-gray-700 hover:bg-gray-100 border-t border-gray-200"
+            className="block px-4 py-2 hover:bg-gray-100 border-t border-gray-200"
           >
             (602) 810-1856
           </a>

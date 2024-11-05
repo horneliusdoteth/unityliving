@@ -6,16 +6,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#5B7AB9',    // Indigo
-        secondary: '#FF5722',  // Deep Orange
-        // background: '#F5F5F5',
-        background: '#ede3d0',
-        text: '#212121',       // Dark Gray
-        accent: '#00BCD4',     // Cyan
+        primary: '#000000',    // Black for primary elements
+        secondary: '#FF0000',  // Red accent matching the logo
+        background: '#FFFFFF', // White background
+        text: '#333333',       // Dark Gray text for readability
+        accent: '#FF0000',     // Red accent color
       },
       fontFamily: {
-        sans: ['"Open Sans"', 'sans-serif'],
-        heading: ['"Montserrat"', 'sans-serif'],
+        // sans: ['"Open Sans"', 'sans-serif'],
+        // heading: ['"Montserrat"', 'sans-serif'],
+        sans: ['"Roboto Flex"', 'Helvetica Neue', 'Arial', 'sans-serif'],
+        heading: ['"Roboto Flex"', 'Helvetica Neue', 'Arial', 'sans-serif'],
       },
       boxShadow: {
         'custom-light': '0 2px 10px rgba(0, 0, 0, 0.1)',

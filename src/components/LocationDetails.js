@@ -1,4 +1,3 @@
-// src/components/LocationDetails.js
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 import {
@@ -79,7 +78,7 @@ const LocationDetails = () => {
   ];
 
   return (
-    <section className="py-12 background">
+    <section className="py-12">
       <div className="container mx-auto px-4">
         <h2
           className="text-4xl font-heading font-bold text-primary mb-6"
@@ -101,10 +100,10 @@ const LocationDetails = () => {
               <img
                 src={image}
                 alt={`View ${index + 1}`}
-                className="w-full h-64 object-cover rounded-lg shadow-xl"
+                className="w-full h-64 object-cover rounded-md drop-shadow-2xl"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition duration-300 rounded-lg flex items-center justify-center">
-                <span className="text-white text-xl font-semibold">View Photo</span>
+              <div className="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition duration-300 rounded-md flex items-center justify-center">
+                <span className="text-white text-xl font-medium">View Photo</span>
               </div>
             </div>
           ))}
@@ -145,8 +144,8 @@ const LocationDetails = () => {
         )}
 
         {/* Location Description */}
-        <div className="mt-12 font-semibold" data-aos="fade-up">
-          <p className="text-lg text-text leading-relaxed mb-8">
+        <div className="mt-12" data-aos="fade-up">
+          <p className="text-lg leading-relaxed mb-8">
             Our Scottsdale location offers a serene environment for recovery.
             Nestled in the heart of Scottsdale, it provides easy access to local
             amenities while ensuring a peaceful atmosphere for our residents.
@@ -165,8 +164,8 @@ const LocationDetails = () => {
                 data-aos="fade-up"
                 data-aos-delay={index * 50}
               >
-                <CheckCircleIcon className="h-6 w-6 text-primary flex-shrink-0 mt-1 mr-3" />
-                <p className="text-lg text-text">{feature}</p>
+                <CheckCircleIcon className="h-6 w-6 text-secondary flex-shrink-0 mt-1 mr-3" />
+                <p className="text-lg">{feature}</p>
               </div>
             ))}
           </div>
@@ -177,7 +176,7 @@ const LocationDetails = () => {
           <HashLink
             smooth
             to="/#locations"
-            className="inline-block px-6 py-3 bg-primary text-white rounded-full text-lg font-semibold hover:bg-primary-dark transition duration-300 transform hover:-translate-y-1 shadow-lg"
+            className="inline-block px-6 py-3 bg-secondary text-white rounded-full text-lg font-medium hover:bg-red-600 transition duration-300"
           >
             Back
           </HashLink>

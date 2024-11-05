@@ -19,7 +19,7 @@ function App() {
 
   return (
     <Router>
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col min-h-screen bg-background text-text font-sans">
         <Header />
         <main className="flex-grow pt-16">
           <Routes>

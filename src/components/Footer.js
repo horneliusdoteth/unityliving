@@ -4,17 +4,17 @@ import { HashLink } from 'react-router-hash-link';
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-white py-5">
+    <footer className="bg-background text-text py-6 border-t border-gray-200">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between">
           {/* Logo and Brand */}
           <div className="flex items-center mb-6 md:mb-0">
             <img
-              src="/assets/unity_living_logo_white.webp"
+              src="/assets/unity_living_logo.webp"
               alt="Unity Living Logo"
-              className="w-12 h-12 mr-3"
+              className="w-10 h-10 mr-2"
             />
-            <HashLink to="/#top" className="font-heading text-2xl font-bold">
+            <HashLink to="/#top" className="font-heading text-xl font-bold">
               Unity Living
             </HashLink>
           </div>
@@ -43,7 +43,7 @@ const Footer = () => {
             </HashLink>
           </nav>
         </div>
-        <div className="text-center text-sm">
+        <div className="text-center text-sm mt-4">
           © {new Date().getFullYear()} Unity Living. All rights reserved.
         </div>
       </div>
